@@ -6,7 +6,7 @@ Serie 1
 
 Para el problema 1 se implemento un arreglo con limite uno que iría creciendo conforme el usuario ingresara numero.
 
-*Entradas: indice y dato
+* Entradas: indice y dato
 *Salidas: el arreglo con la secuencia indicada en el enunciado
 *Proceso: se crearon dos metodos uno que ingresa los datos(add) y otro que reasigana las posiciones(reaposicionar)
 En el metodo add se verifica si es necesario reasignar posiciones y de serlo pasa al metodo correspondiente.
