@@ -16,12 +16,17 @@ public class Lista<E> implements List<E>{
 	}
 
 	@Override
+	/**
+	 * Devuelve el tamaño de la lista
+	 */
 	public int size() {
-		// TODO Auto-generated method stub
 		return size;
 	}
 
 	@Override
+	/***
+	 * Devuelve si la lista esta vacia
+	 */
 	public boolean isEmpty() {
 		if(size==0) {
 			return true;
@@ -33,6 +38,9 @@ public class Lista<E> implements List<E>{
 	}
 
 	@Override
+	/**
+	 * obtiene el valor con el indice del parametro
+	 */
 	public E get(int i) {
 		// TODO Auto-generated method stub
 		E guardar=null;
@@ -45,6 +53,9 @@ public class Lista<E> implements List<E>{
 	}
 
 	@Override
+	/***
+	 * Ingresa un valor en el indice
+	 */
 	public E set(int i, E e) {
 		if(i>lista.length) {
 			return null;
@@ -57,6 +68,9 @@ public class Lista<E> implements List<E>{
 	}
 
 	@Override
+	/**
+	 * Ingresa una valor en el indice y mueve los datos de ser necesario
+	 */
 	public void add(int i, E e) {
 		if(isEmpty()==true) {
 			if(i>1) {
@@ -91,6 +105,10 @@ public class Lista<E> implements List<E>{
 	}
 
 	@Override
+	/**
+	 * elimina un dato de la lista
+	 * @param i
+	 */
 	public E remove(int i) throws IndexOutOfBoundsException {
 		E guardar=null;
 		if(i>lista.length) {
@@ -106,7 +124,10 @@ public class Lista<E> implements List<E>{
 		}
 		return guardar;
 	}
-	
+	/**
+	 * Reasigna los datos a nuevas posiciones para ingresar un nuevo dato
+	 * @param i
+	 */
 	public void reaposicionar(int i) {
 		int tam=lista.length;
 		Object[] temp=new Object[tam+1];
@@ -121,6 +142,9 @@ public class Lista<E> implements List<E>{
 		}
 		
 	}
+	/**
+	 * muestra los datos de la lista
+	 */
 	public void Mostrar() {
 		for(int x=0;x<lista.length;x++) {
 			System.out.println("lista "+lista[x]);

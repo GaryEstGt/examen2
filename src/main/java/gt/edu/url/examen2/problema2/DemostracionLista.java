@@ -2,6 +2,9 @@ package gt.edu.url.examen2.problema2;
 
 public class DemostracionLista implements DemoList {
 
+	/**
+	 * Implementa la lista dinamica y la retorna
+	 */
 	@Override
 	public List<Integer> crearDemoLista() {
 		List<Integer> lista=new Lista<>();
