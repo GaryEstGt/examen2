@@ -3,12 +3,14 @@ import gt.edu.url.examen2.problema2.Lista;
 import gt.edu.url.examen2.problema4.LinkedPositionalList;
 import gt.edu.url.examen2.problema4.Position;
 import gt.edu.url.examen2.problema4.PositionalList;
+import gt.edu.url.examen2.problema5.DynamicStack;
+import gt.edu.url.examen2.problema5.Stack;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*Lista<Integer> lista=new Lista<>();
+		Lista<Integer> lista=new Lista<>();
 		lista.add(0, 4);
 		lista.add(0, 3);
 		lista.add(0, 2);
@@ -18,16 +20,27 @@ public class Main {
 		lista.add(3, 7);
 		lista.add(0, 8);
 		System.out.println(lista.remove(0));
-		lista.Mostrar();*/
+		lista.Mostrar();
 		/*****************************************Termina serie i***********************************************************************************/
 		PositionalList<String> listap=new LinkedPositionalList<>();
 		Position<String> P01,P02,P03;
 		P01=listap.addFirst("a");
 		P02=listap.addAfter(P01, "b");
 		P03=listap.addAfter(P02, "c");
-		System.out.println(listap.positionAtIndex(0).getElement());
+		System.out.println(listap.positionAtIndex(1).getElement());
 		/******************************************Tercera Serie**************************************************************************/
-		
+		Stack<String> pila=new DynamicStack<>();
+		pila.push("hola");
+		pila.push("juan");
+		pila.push("soy");
+		pila.push("azusm");
+		System.out.println(pila.top());
+		pila.pop();
+		System.out.println(pila.top());
+		pila.pop();
+		System.out.println(pila.top());
+		pila.pop();
+		System.out.println(pila.top());
 		
 	}
 

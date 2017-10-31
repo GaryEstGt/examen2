@@ -206,7 +206,9 @@ public class LinkedPositionalList<E> implements PositionalList<E> {
 			
 			
 		}
-	
+	if(retorno==null) {
+		new IndexOutOfBoundsException();
+	}
 		return position(retorno);
 	}
 
